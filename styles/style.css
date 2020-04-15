@@ -73,13 +73,13 @@ hr{
     padding: 15px 15px;
     text-align: center;
     font-size:15px;
-    background-color:yellow;
+    background-color:white;
     color:black;
     width: auto;
 }
 
 .nav-items:hover{
-    background-color:yellow;
+    background-color:white;
     color:black;
 }
 
