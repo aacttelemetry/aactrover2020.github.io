@@ -67,6 +67,17 @@ hr{
     transition:250ms;
 }
 
+.nav-active{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+    text-align: center;
+    font-size:15px;
+    background-color:yellow;
+    color:black;
+    width: auto;
+}
+
 .nav-items:hover{
     background-color:yellow;
     color:black;
