@@ -1,0 +1,121 @@
+/* #region Sitewide */
+* {
+    font-family:"Exo 2", sans-serif;
+}
+
+p{
+    color:white;
+}
+
+p a{
+    color:white;
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+}
+
+h2{
+    color:white;
+    text-align: left;
+    font-size: 20px;
+    margin: 0px 5vw;
+}
+
+hr{
+    margin: 30px 40vw 10px 40vw;
+}
+
+/* #endregion */
+
+/* #region Header Styles */
+
+#nav-box{
+    display:flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: black;
+    align-content: center;
+    width: auto;
+}
+
+.left-nav{
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    height:auto;
+    margin-right: auto;
+}
+
+.right-nav{
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    height:auto;
+}
+
+.nav-items{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+    text-align: center;
+    font-size:15px;
+    color:white;
+    width: auto;
+    transition:250ms;
+}
+
+.nav-items:hover{
+    background-color:yellow;
+    color:black;
+}
+
+#logo{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+    text-align: center;
+    font-size:15px;
+    color:white;
+    width: auto;
+}
+
+/* #endregion */
+
+/* #region Body Styles */
+.intro{
+    margin: 0px 5vw;
+}
+
+.home-media{
+    width:auto;
+    margin: 0px 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* #endregion */
+
+/* #region Footer Styles */
+body{
+    margin:0;
+    background-color:rgb(43, 43, 43);
+}
+
+.footer-container{
+    height:50px;
+    background-color: black;
+    align-content: center;
+    width: 100%;
+}
+
+.footer-container p{
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+/* #endregion */
