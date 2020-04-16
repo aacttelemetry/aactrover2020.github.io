@@ -94,7 +94,6 @@ hr{
     padding: 5px;
     width: auto;
     transition:250ms;
-    display: inline-block;
 }
 
 .nav-icons:hover{
