@@ -28,6 +28,10 @@ hr{
     margin: 30px 40vw 10px 40vw;
 }
 
+.intro{
+    margin: 0px 5vw;
+}
+
 /* #endregion */
 
 /* #region Header Styles */
@@ -35,7 +39,7 @@ hr{
 #nav-box{
     display:flex;
     flex-direction: row;
-    height: 50px;
+    height: auto;
     background-color: black;
     align-content: center;
     width: auto;
@@ -59,7 +63,7 @@ hr{
 .nav-items{
     text-decoration: none;
     text-align: center;
-    padding: 15px 15px;
+    padding: 15px;
     font-size:15px;
     color:white;
     width: auto;
@@ -69,7 +73,7 @@ hr{
 .nav-active{
     text-decoration: none;
     text-align: center;
-    padding: 15px 15px;
+    padding: 15px;
     font-size:15px;
     background-color:white;
     color:black;
@@ -117,12 +121,24 @@ hr{
     display: inline;
 }
 
+@media (orientation: landscape) {
+    #rotate-suggestion{
+        display:none;
+    }
+}
+
+@media (orientation: portrait) {
+    #rotate-suggestion{
+        padding:10px;
+        background: #ffff00;
+        font-size: 30px;
+    }
+}
+
+
 /* #endregion */
 
 /* #region Body Styles */
-.intro{
-    margin: 0px 5vw;
-}
 
 .home-media{
     width:auto;
@@ -134,10 +150,58 @@ hr{
 
 .data-graphs{
     width: 40vw;
-    height: 20vh;
+    height: 35vh;
     background-color: #222222;
+    overflow: hidden;
     margin: 5vh 5vw;
+    display:none;
+
+    /*
+    padding: 0 18px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;*/
 }
+
+/*Below is based on https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+
+.collapsible-data{
+    background: rgb(0,0,0);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+    transition:250ms;
+}
+
+.collapsible-active, .collapsible-data:hover{
+    /*fallback reaction if gradients are disabled*/
+    background-color: #444444;
+}
+
+.collapsible-data:after {
+    content: '\25BC'; /* Unicode for down arrow (hex)*/
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.collapsible-active:after {
+    content: "\25B2"; /* Unicode for up arrow */
+}
+
+.collapsible-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*Above is based on https://www.w3schools.com/howto/howto_js_collapsible.asp*/
 
 /* #endregion */
 

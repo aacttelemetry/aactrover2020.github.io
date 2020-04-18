@@ -5,6 +5,7 @@ Plotly.newPlot( TESTER, [{
 margin: { t: 0, r: 0, b: 25, l: 25 },
 plot_bgcolor:"#111", 
 paper_bgcolor:"#111", 
-font: {family:"Exo 2", color:"#FFF"}}
+font: {family:"Exo 2", color:"#FFF"},
+hoverlabel: {font: {family: "Exo 2", color:"#FFF"}}}
  );
 //https://plotly.com/javascript/reference/#layout-paper_bgcolor

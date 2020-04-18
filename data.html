@@ -5,8 +5,6 @@
         <title>Data | AACT Rover Telemetry </title>
         <link href="styles/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="scripts/navbar.js"></script>
         <!--You can have different stylesheets for different media, as shown below:
         <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
         <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">-->
@@ -16,10 +14,10 @@
         <nav id="nav-box">
             <div class="left-nav">
                 <a href="index.html" id="logo">[AACT Rover Telemetry]</a>
-                <a href="#" class="nav-items">About</a>
+                <a href="about.html" class="nav-items">About</a>
                 <a href="data.html" class="nav-active">Data</a>
-                <a href="#" class="nav-items">Documentation</a>
-                <a href="#" class="nav-items">Media</a>
+                <a href="documentation.html" class="nav-items">Documentation</a>
+                <a href="media.html" class="nav-items">Media</a>
             </div>
             <div class="right-nav">
                 <a href="https://twitter.com/aactrover" class="nav-icons"><img src="images/twitter-logo-white.png" alt="Twitter" width="40" height="40" class="icon-front"><img src="images/twitter-logo-black.png" alt="Twitter" width="40" height="40" class="icon-back"></a>
@@ -30,7 +28,18 @@
     </header>
     <body>
         <h1>Telemetry Data</h1>
+        <button type="button" class="collapsible-data">Environmental Conditions</button>
         <div id="tester" class="data-graphs"></div>
+        <button type="button" class="collapsible-data">Athlete Data</button>
+        <div class="data-graphs"> <p>a</p></div>
+        <button type="button" class="collapsible-data">Rover/Positioning Data</button>
+        <div class="data-graphs"> <p>a</p></div>
+        <button type="button" class="collapsible-data">Image Data</button>
+        <div class="data-graphs"> <p>a</p></div>
+        <button type="button" class="collapsible-data">Livestream</button>
+        <div class="data-graphs"> <p>a</p></div>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="scripts/collapsible-box.js"></script>
         <script src="scripts/navbar.js"></script>
         <script src="scripts/data.js"></script>
     </body>
