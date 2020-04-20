@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Home | AACT Rover Telemetry</title>
+        <title>Documentation | AACT Rover Telemetry</title>
         <link href="styles/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
         
@@ -31,41 +31,74 @@
         <h1>Project Documentation</h1>
         <div class="intro">
             <p style="text-align: center;">Below is a list of all public documentation of the AACT Rover Project, including telemetry materials.</p>
+            <p style="text-align: center;"><a id="expand-all" href="#">Expand All</a> | <a id="collapse-all" href="#">Collapse All</a></p>
         </div>
         <div class="docs-listing">
             <button type="button" class="collapsible-data">Telemetry Documentation</button>
                 <div class="docs-content">
                     <button type="button" class="collapsible-data smaller">2020</button>
                         <ul>
-                            <li><b>Submitted technical report</b> - The final draft of the report submitted to AIAA for award consideration.</li>
-                            <li><b>Early draft materials</b> - Google Drive folder containing early versions of the report and various materials.</li>
+                            <li><a href="https://drive.google.com/open?id=1vNWtVX-0AonVTZm8llp3Dfd-jVqxUuPi">Submitted technical report</a> - The final draft of the report submitted to AIAA for award consideration.</li>
+                            <li><a href="#">Draft Materials</a> - Google Drive folder containing early versions of the report and various materials.</li>
+                            <li><a href="#">Data Sheet</a> - Google Sheet containing all (uploaded) telemetry data.</li>
+                            <li><a href="#">Strategy Sheet</a> - Google Sheet used to create a course strategy based on telemetry and course data.</li>
                         </ul>
                     <button type="button" class="collapsible-data smaller">2019</button>
                         <ul>
-                            <li><b>Old telemetry guide</b> - Detailed overview of the 2019 telemetry system, including methodology and setup, intended for use by the team at the competition.</li>
+                            <li><a href="https://drive.google.com/file/d/1xEh56nXU770y0y_1TPwB-EDTDZ-non385fOOhK12YIE/view">Old telemetry guide</a> - Detailed overview of the 2019 telemetry system, including methodology and setup, intended for use by the team at the competition.</li>
+                            <li><a href="https://docs.google.com/spreadsheets/d/1K_3HoLemrF0fYTmdT47LxnZcyGHhU7nC4pLsQebIU0s/">Data spreadsheet</a> - Google spreadsheet to which data was written to.</li>
                         </ul>
                 </div>
             <button type="button" class="collapsible-data">Source Code</button>
                 <div class="docs-content">
-                    <p>All source code (including that of this website) can be found on <a href="https://github.com/aacttelemetry">Github</a>.</p>
+                    <p>All source code (including that of this website) can be found on <a href="https://github.com/aacttelemetry">our GitHub</a>.</p>
                     <button type="button" class="collapsible-data smaller">2020</button>
                     <ul>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
-                        <li><b>Raspberry Pi repository</b> - yea</li>
+                        <li><a href="https://github.com/aacttelemetry/aactrpi">Raspberry Pi repository</a> - All files on the Raspberry Pi responsible for handling data transmission to the receiving client.</li>
+                        <li><a href="https://github.com/aacttelemetry/aactarduino">Arduino repository</a> - Code of the various Arduinos responsible for handling individual sensors and systems.</li>
+                        <li><a href="https://github.com/aacttelemetry/aactfitbit">Fitbit repository</a> - Fitbit project responsible for both accessibly displaying telemetry data to rover drivers and transmitting driver vital signs.</li>
+                        <li><a href="https://github.com/aacttelemetry/timer_with_timer">Timer repository</a> - Standalone Arduino project used to warn drivers of time remaining.</li>
+                        <li><a href="https://github.com/aacttelemetry/aactspectrotask">Camera repository</a> - Files involved in the creation of a camera integrated with the telemetry system capable of dealing with the spectrographic analysis task, among other needs.</li>
+                        <li><a href="https://github.com/aacttelemetry/aactui">User interface repository</a> - Files involved with the receiving client at home base.</li>
+                        <li><a href="https://github.com/aacttelemetry/aacttelemetry.github.io">Website repository</a> - Files comprising this website.</li>
                     </ul>
                     <button type="button" class="collapsible-data smaller">2019</button>
                     <ul>
-                        <li><b>Old combined repository</b></li>
+                        <li><a href="https://github.com/lgactna/aact-telemetry">Old combined repository</a> - All files involved in the old, unorganized 2019 telemetry system.</li>
                     </ul>
                 </div>
             <button type="button" class="collapsible-data">Other Award Reports</button>
+                <div class="docs-content">
+                    <button type="button" class="collapsible-data smaller">2020</button>
+                        <ul>
+                            <li><a href="#">Technology Challenge Award</a></li>
+                            <li><a href="#">AIAA Best Report Award</a></li>
+                        </ul>
+                    <button type="button" class="collapsible-data smaller">2019</button>
+                        <ul>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                </div>
             <button type="button" class="collapsible-data">Other AACT HERC Documentation</button>
+                <div class="docs-content">
+                    <button type="button" class="collapsible-data smaller">2020</button>
+                        <ul>
+                            <li><a href="#">Image Gallery</a></li>
+                        </ul>
+                    <button type="button" class="collapsible-data smaller">2019</button>
+                        <ul>
+                            <li><a href="https://www.instagram.com/aactroverproject/">Old Instagram account</a></li>
+                            <li><a href="#">Attempt on Twitter livestream</a> - run starts at &lt;timestamp&gt; </li>
+                        </ul>
+                    <button type="button" class="collapsible-data smaller">2016</button>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=aQrPhnVU-wo">YouTube Video</a></li>
+                        </ul>
+                    <button type="button" class="collapsible-data smaller">2014</button>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=j9IU9YP0wN0">YouTube Video</a></li>
+                        </ul>
+                </div>
         </div>
         <script src="scripts/collapsible-box.js"></script>
     </body>

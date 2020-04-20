@@ -29,22 +29,36 @@
     <body>
         <h1>Telemetry Data</h1>
         <div class="intro">
-            <p>probably just remove the collapsibles and have them show all at once</p>
+            <p>Below are graphical representations of (most) data collected by the telemetry system. While we do our best to ensure that these update in real-time, some of these may exhibit delays in updating or must be updated manually. 
+            <br><br>You can view a spreadsheet of this data (haven't figured out AWS-node.js linkages) <a href="#">here</a>.
+            <br><br>Things that can't (easily) be represented, such as instantaneous orientation, will be in the spreadsheet above.</p>
         </div>
-        <button type="button" class="collapsible-data">Environmental Conditions</button>
-        <div id="tester" class="data-graphs"></div>
-        <button type="button" class="collapsible-data">Athlete Data</button>
-        <div class="data-graphs"> <p>a</p></div>
-        <button type="button" class="collapsible-data">Rover/Positioning Data</button>
-        <div class="data-graphs"> <p>a</p></div>
-        <button type="button" class="collapsible-data">Image Data</button>
-        <div class="data-graphs"> <p>a</p></div>
-        <button type="button" class="collapsible-data">Livestream</button>
-        <div class="data-graphs"> <p>a</p></div>
-        <button type="button" class="collapsible-data">Website Statistics</button>
-        <div class="data-graphs"> <p>a</p></div>
+        <h2>Environmental Conditions</h2>
+            <h3>Temperature</h3>
+                <div id="temp-line" class="data-graphs"></div>
+            <h3>Relative Humidity</h3>
+                <div id="humid-line" class="data-graphs"></div>
+        <h2>Athlete Data</h2>
+            <h3>Heartrate</h3>
+                <div id="heartrate-line" class="data-graphs"></div>
+            <h3>Heartrate Histogram</h3>
+                <div id="heartrate-histogram" class="data-graphs"></div>
+        <h2>Rover/Positioning Data</h2>
+            <p class="normal">Originally there were plans to just map out every data point based on long/lat; i realize now that having thousands of those points on a Google My Maps might not be possible, as it costs money to use their API and there are limitations for non-API methods</p>
+            <h3>GPS-based displacement</h3>
+                <div class="data-graphs"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t0KMMT5U9Isx_pC_KBRy5T5wr6B6K4wS" style="width: 100%; height: 100%;"></iframe></div>
+            <h3>Relative displacement</h3>
+                <div class="data-graphs"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t0KMMT5U9Isx_pC_KBRy5T5wr6B6K4wS" style="width: 100%; height: 100%;"></iframe></div>
+            <h3>Speed</h3>
+                <div id="speed-line" class="data-graphs"></div>
+        <h2>Image Data</h2>
+            <p class="normal">If the embedded Google Drive folder fails to show correctly, please click here for the direct link: <a href="https://drive.google.com/drive/folders/1U-n7PggS1KcSCQdN7WJigss7In8o3Wog?usp=sharing">Image Folder</a></p>
+            <div class="data-graphs"><iframe src="https://drive.google.com/embeddedfolderview?id=1U-n7PggS1KcSCQdN7WJigss7In8o3Wog#grid" style="width:100%; height:100%; border:0;"></iframe></div>
+        <h2>Livestream</h2>
+            <div class="data-graphs"> <p>a</p></div>
+        <h2>Website Statistics</h2>
+            <div class="data-graphs"> <p>a</p></div>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="scripts/collapsible-box.js"></script>
         <script src="scripts/navbar.js"></script>
         <script src="scripts/data.js"></script>
     </body>

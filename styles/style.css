@@ -11,6 +11,11 @@ p a{
     color:white;
 }
 
+.normal{
+    color:white;
+    margin-left: 5vw;
+}
+
 h1{
     color:white;
     text-align: center;
@@ -22,6 +27,14 @@ h2{
     text-align: left;
     font-size: 20px;
     margin: 0px 5vw;
+}
+
+h3{
+    color:white;
+    text-align: center;
+    font-size: 17px;
+    margin: 0 5vw;
+    text-decoration: underline;
 }
 
 
@@ -150,14 +163,14 @@ hr{
 }
 
 .data-graphs{
-    width: 40vw;
-    height: 35vh;
+    width: 90vw; /*Old sizes: 40vw x 35vh*/
+    height: 40vh;
     background-color: #222222;
     overflow: hidden;
     margin: 5vh 5vw;
-    display:none;
 
     /*
+    display:none;
     padding: 0 18px;
     max-height: 0;
     transition: max-height 0.2s ease-out;*/
@@ -181,14 +194,13 @@ hr{
 }
 
 .collapsible-data.smaller{
-    padding: 9px;
+    padding: 9px 18px 9px 9px; /*18px on right allows the arrow to be aligned with that of a parent collapsible*/
     margin: 0 0 0 3vw;
     width: 95.5vw;
     border-radius: 8px;
 }
 
 .collapsible-active, .collapsible-data:hover{
-    /*fallback reaction if gradients are disabled*/
     background-color: #444444;
 }
 
@@ -224,6 +236,11 @@ hr{
     color:white;
     overflow: hidden;
     margin: 16px 5vw;
+}
+
+.docs-listing a{
+    font-weight: bold;
+    color:white;
 }
 
 

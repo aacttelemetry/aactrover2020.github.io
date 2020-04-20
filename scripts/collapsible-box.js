@@ -29,3 +29,26 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+var expall = document.getElementById("expand-all");
+var colall = document.getElementById("collapse-all");
+
+expall.addEventListener("click", function(){
+  for (i = 0; i < coll.length; i++) {
+      var content = coll[i].nextElementSibling;
+      if (content.style.display === "none" || content.style.display == "") {
+        coll[i].classList.toggle("collapsible-active");
+        content.style.display = "block";
+      }
+  }
+});
+
+colall.addEventListener("click", function(){
+  for (i = 0; i < coll.length; i++) {
+      var content = coll[i].nextElementSibling;
+      if (content.style.display === "block") {
+        coll[i].classList.toggle("collapsible-active");
+        content.style.display = "none";
+      }
+  }
+});
